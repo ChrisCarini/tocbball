@@ -1,0 +1,7 @@
+Options -Indexes
+#Options +FollowSymLinks
+RewriteEngine On
+
+# Force site to redirect to HTTPS instead of HTTP
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

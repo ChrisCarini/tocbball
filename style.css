@@ -1,0 +1,41 @@
+.errorInput {
+    background-color: rgb(221, 139, 80);
+}
+
+div#wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+header {
+    background-image: url(./Logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 89px;
+}
+
+div#menu {
+    padding-top: 15px;
+}
+
+div.menuItem {
+    font-size: 24px;
+}
+
+div#menu div {
+    display: inline;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    div.menuItem {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    #content {
+        float: none;
+        width: 100%;
+    }
+}
+
